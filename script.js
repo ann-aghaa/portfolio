@@ -1,4 +1,3 @@
-// ── Navbar scroll effect ──
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 40) {
@@ -7,8 +6,6 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('scrolled');
   }
 });
-
-// ── Fade in on scroll ──
 const fadeEls = document.querySelectorAll(
   '.skill-card, .project-card, .about-grid, .contact-box, .section-title, .section-sub'
 );
@@ -27,8 +24,6 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 fadeEls.forEach(el => observer.observe(el));
-
-// ── Smooth active nav highlight ──
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 
@@ -49,8 +44,6 @@ window.addEventListener('scroll', () => {
     }
   });
 });
-
-// ── Staggered card animations ──
 document.querySelectorAll('.skill-card').forEach((card, i) => {
   card.style.transitionDelay = `${i * 0.08}s`;
 });
