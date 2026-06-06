@@ -22,13 +22,9 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
 }
-
-/* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
-
-/* ── NAV ── */
 #navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -91,8 +87,6 @@ body {
 }
 
 .nav-cta:hover { background: var(--accent); color: #fff; }
-
-/* ── HERO ── */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -361,7 +355,6 @@ body {
 
 .fact-lbl { font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 1px; }
 
-/* ── SKILLS ── */
 .skills { background: var(--bg); }
 
 .skills-grid {
@@ -404,7 +397,6 @@ body {
   border-radius: 50px;
 }
 
-/* ── PROJECTS ── */
 .projects { background: var(--white); }
 
 .projects-grid {
@@ -492,7 +484,6 @@ body {
   font-weight: 400;
 }
 
-/* ── CONTACT ── */
 .contact { background: var(--bg); }
 
 .contact-box {
@@ -555,7 +546,6 @@ body {
 
 .contact-icon { font-size: 18px; }
 
-/* ── FOOTER ── */
 .footer {
   background: var(--ink);
   padding: 28px 32px;
@@ -570,7 +560,6 @@ body {
 
 .footer strong { color: rgba(255,255,255,0.7); font-weight: 500; }
 
-/* ── FADE IN ON SCROLL ── */
 .fade-in {
   opacity: 0;
   transform: translateY(24px);
@@ -582,7 +571,6 @@ body {
   transform: translateY(0);
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-left { position: static; }
